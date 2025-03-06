@@ -1,0 +1,19 @@
+progress {
+    width: 90%;
+    height: 3rem;
+    margin-left: 5%;
+    justify-content: center;
+}
+
+.wrap {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.calendar {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+}

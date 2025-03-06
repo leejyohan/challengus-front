@@ -1,14 +1,25 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Login from './pages/Login';
+import React from 'react';
+import Home from './pages/Home';
+import Signup from './pages/Signup';
+import Mypage from './pages/Mypage';
+import Writetodo from './pages/Writetodo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        로그인 - 회원가입/비번찾기
-               - 메인/달성율/상세 - 작성/수정/삭제
-                    - 내정보   
-      </header>
-    </div>
+    <React.Fragment>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/login' element={<Login />} />
+          <Route path='/Home' element={<Home />} />
+          <Route path='/signup' element={<Signup />} />
+          <Route path='/mypage' element={<Mypage/>}/>
+          <Route path='/write' element={<Writetodo/>}/>
+        </Routes>
+      </BrowserRouter>
+    </React.Fragment>
   );
 }
 
